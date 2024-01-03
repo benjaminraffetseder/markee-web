@@ -1,6 +1,8 @@
 
 import { css } from 'styled-system/css'
 import { Container, HStack } from 'styled-system/jsx'
+import { Heading } from '~/components/typography/heading'
+import { Text } from '~/components/typography/text'
 import { Button } from '~/components/ui/button'
 
 export default function Home() {
@@ -22,21 +24,15 @@ export default function Home() {
         gap: 2,
       })}
     >
-      <h1 className={css({
-        fontSize: 40,
-        fontWeight: 700,
-      })}>
+      <Heading as="h1" textStyle="5xl">
        Markee
-      </h1>
-      <h2 className={css({
-        fontSize: 24,
-        fontWeight: 500,
-      })}>
+      </Heading>
+      <Heading>
         Your reading companion
-      </h2>
-      <p>
+      </Heading>
+      <Text>
         Markee is a simple app that wants to help you to keep track of your reading progress on your physical books. Add your books, create book-specific notes, or to keep quotes in one place. Forget your bookmarks.
-      </p>
+      </Text>
       <HStack gap={10} pt={2}>
         <Button variant="solid" className={css({w: 'fit-content'})} >Get started</Button>
         <Button variant="ghost" className={css({ w: 'fit-content' })} >About</Button>
