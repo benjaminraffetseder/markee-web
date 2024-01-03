@@ -11,7 +11,10 @@ const Slider = withProvider(styled(ArkSlider.Root), 'root')
 const SliderControl = withContext(styled(ArkSlider.Control), 'control')
 const SliderLabel = withContext(styled(ArkSlider.Label), 'label')
 const SliderMarker = withContext(styled(ArkSlider.Marker), 'marker')
-const SliderMarkerGroup = withContext(styled(ArkSlider.MarkerGroup), 'markerGroup')
+const SliderMarkerGroup = withContext(
+  styled(ArkSlider.MarkerGroup),
+  'markerGroup'
+)
 const SliderRange = withContext(styled(ArkSlider.Range), 'range')
 const SliderThumb = withContext(styled(ArkSlider.Thumb), 'thumb')
 const SliderTrack = withContext(styled(ArkSlider.Track), 'track')
@@ -49,11 +52,15 @@ export {
 }
 
 export interface SliderProps extends HTMLStyledProps<typeof Slider> {}
-export interface SliderControlProps extends HTMLStyledProps<typeof SliderControl> {}
+export interface SliderControlProps
+  extends HTMLStyledProps<typeof SliderControl> {}
 export interface SliderLabelProps extends HTMLStyledProps<typeof SliderLabel> {}
-export interface SliderMarkerProps extends HTMLStyledProps<typeof SliderMarker> {}
-export interface SliderMarkerGroupProps extends HTMLStyledProps<typeof SliderMarkerGroup> {}
+export interface SliderMarkerProps
+  extends HTMLStyledProps<typeof SliderMarker> {}
+export interface SliderMarkerGroupProps
+  extends HTMLStyledProps<typeof SliderMarkerGroup> {}
 export interface SliderRangeProps extends HTMLStyledProps<typeof SliderRange> {}
 export interface SliderThumbProps extends HTMLStyledProps<typeof SliderThumb> {}
 export interface SliderTrackProps extends HTMLStyledProps<typeof SliderTrack> {}
-export interface SliderValueTextProps extends HTMLStyledProps<typeof SliderValueText> {}
+export interface SliderValueTextProps
+  extends HTMLStyledProps<typeof SliderValueText> {}

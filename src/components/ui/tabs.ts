@@ -34,6 +34,7 @@ export {
 
 export interface TabsProps extends HTMLStyledProps<typeof Tabs> {}
 export interface TabsContentProps extends HTMLStyledProps<typeof TabsContent> {}
-export interface TabsIndicatorProps extends HTMLStyledProps<typeof TabsIndicator> {}
+export interface TabsIndicatorProps
+  extends HTMLStyledProps<typeof TabsIndicator> {}
 export interface TabsListProps extends HTMLStyledProps<typeof TabsList> {}
 export interface TabsTriggerProps extends HTMLStyledProps<typeof TabsTrigger> {}

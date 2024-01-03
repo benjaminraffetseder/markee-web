@@ -8,10 +8,19 @@ import { createStyleContext } from '~/lib/create-style-context'
 const { withProvider, withContext } = createStyleContext(pagination)
 
 const Pagination = withProvider(styled(ArkPagination.Root), 'root')
-const PaginationEllipsis = withContext(styled(ArkPagination.Ellipsis), 'ellipsis')
+const PaginationEllipsis = withContext(
+  styled(ArkPagination.Ellipsis),
+  'ellipsis'
+)
 const PaginationItem = withContext(styled(ArkPagination.Item), 'item')
-const PaginationNextTrigger = withContext(styled(ArkPagination.NextTrigger), 'nextTrigger')
-const PaginationPrevTrigger = withContext(styled(ArkPagination.PrevTrigger), 'prevTrigger')
+const PaginationNextTrigger = withContext(
+  styled(ArkPagination.NextTrigger),
+  'nextTrigger'
+)
+const PaginationPrevTrigger = withContext(
+  styled(ArkPagination.PrevTrigger),
+  'prevTrigger'
+)
 
 const Root = Pagination
 const Ellipsis = PaginationEllipsis
@@ -33,7 +42,11 @@ export {
 }
 
 export interface PaginationProps extends HTMLStyledProps<typeof Pagination> {}
-export interface PaginationEllipsisProps extends HTMLStyledProps<typeof PaginationEllipsis> {}
-export interface PaginationItemProps extends HTMLStyledProps<typeof PaginationItem> {}
-export interface PaginationNextTriggerProps extends HTMLStyledProps<typeof PaginationNextTrigger> {}
-export interface PaginationPrevTriggerProps extends HTMLStyledProps<typeof PaginationPrevTrigger> {}
+export interface PaginationEllipsisProps
+  extends HTMLStyledProps<typeof PaginationEllipsis> {}
+export interface PaginationItemProps
+  extends HTMLStyledProps<typeof PaginationItem> {}
+export interface PaginationNextTriggerProps
+  extends HTMLStyledProps<typeof PaginationNextTrigger> {}
+export interface PaginationPrevTriggerProps
+  extends HTMLStyledProps<typeof PaginationPrevTrigger> {}

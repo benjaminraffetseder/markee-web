@@ -9,13 +9,22 @@ const { withProvider, withContext } = createStyleContext(editable)
 
 const Editable = withProvider(styled(ArkEditable.Root), 'root')
 const EditableArea = withContext(styled(ArkEditable.Area), 'area')
-const EditableCancelTrigger = withContext(styled(ArkEditable.CancelTrigger), 'cancelTrigger')
+const EditableCancelTrigger = withContext(
+  styled(ArkEditable.CancelTrigger),
+  'cancelTrigger'
+)
 const EditableControl = withContext(styled(ArkEditable.Control), 'control')
-const EditableEditTrigger = withContext(styled(ArkEditable.EditTrigger), 'editTrigger')
+const EditableEditTrigger = withContext(
+  styled(ArkEditable.EditTrigger),
+  'editTrigger'
+)
 const EditableInput = withContext(styled(ArkEditable.Input), 'input')
 const EditableLabel = withContext(styled(ArkEditable.Label), 'label')
 const EditablePreview = withContext(styled(ArkEditable.Preview), 'preview')
-const EditableSubmitTrigger = withContext(styled(ArkEditable.SubmitTrigger), 'submitTrigger')
+const EditableSubmitTrigger = withContext(
+  styled(ArkEditable.SubmitTrigger),
+  'submitTrigger'
+)
 
 const Root = Editable
 const Area = EditableArea
@@ -49,11 +58,19 @@ export {
 }
 
 export interface EditableProps extends HTMLStyledProps<typeof Editable> {}
-export interface EditableAreaProps extends HTMLStyledProps<typeof EditableArea> {}
-export interface EditableCancelTriggerProps extends HTMLStyledProps<typeof EditableCancelTrigger> {}
-export interface EditableControlProps extends HTMLStyledProps<typeof EditableControl> {}
-export interface EditableEditTriggerProps extends HTMLStyledProps<typeof EditableEditTrigger> {}
-export interface EditableInputProps extends HTMLStyledProps<typeof EditableInput> {}
-export interface EditableLabelProps extends HTMLStyledProps<typeof EditableLabel> {}
-export interface EditablePreviewProps extends HTMLStyledProps<typeof EditablePreview> {}
-export interface EditableSubmitTriggerProps extends HTMLStyledProps<typeof EditableSubmitTrigger> {}
+export interface EditableAreaProps
+  extends HTMLStyledProps<typeof EditableArea> {}
+export interface EditableCancelTriggerProps
+  extends HTMLStyledProps<typeof EditableCancelTrigger> {}
+export interface EditableControlProps
+  extends HTMLStyledProps<typeof EditableControl> {}
+export interface EditableEditTriggerProps
+  extends HTMLStyledProps<typeof EditableEditTrigger> {}
+export interface EditableInputProps
+  extends HTMLStyledProps<typeof EditableInput> {}
+export interface EditableLabelProps
+  extends HTMLStyledProps<typeof EditableLabel> {}
+export interface EditablePreviewProps
+  extends HTMLStyledProps<typeof EditablePreview> {}
+export interface EditableSubmitTriggerProps
+  extends HTMLStyledProps<typeof EditableSubmitTrigger> {}

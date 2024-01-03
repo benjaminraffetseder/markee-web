@@ -17,9 +17,21 @@ const Control = PinInputControl
 const Input = PinInputInput
 const Label = PinInputLabel
 
-export { Control, Input, Label, PinInput, PinInputControl, PinInputInput, PinInputLabel, Root }
+export {
+  Control,
+  Input,
+  Label,
+  PinInput,
+  PinInputControl,
+  PinInputInput,
+  PinInputLabel,
+  Root,
+}
 
 export interface PinInputProps extends HTMLStyledProps<typeof PinInput> {}
-export interface PinInputControlProps extends HTMLStyledProps<typeof PinInputControl> {}
-export interface PinInputInputProps extends HTMLStyledProps<typeof PinInputInput> {}
-export interface PinInputLabelProps extends HTMLStyledProps<typeof PinInputLabel> {}
+export interface PinInputControlProps
+  extends HTMLStyledProps<typeof PinInputControl> {}
+export interface PinInputInputProps
+  extends HTMLStyledProps<typeof PinInputInput> {}
+export interface PinInputLabelProps
+  extends HTMLStyledProps<typeof PinInputLabel> {}

@@ -4,7 +4,9 @@ import { button } from '~/recipes/button'
 
 export default defineConfig({
   preflight: true,
-  presets: ['@pandacss/preset-base', '@park-ui/panda-preset',
+  presets: [
+    '@pandacss/preset-base',
+    '@park-ui/panda-preset',
     createPreset({
       accentColor: 'grass',
       grayColor: 'olive',

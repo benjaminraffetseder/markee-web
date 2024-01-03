@@ -8,7 +8,10 @@ import { createStyleContext } from '~/lib/create-style-context'
 const { withProvider, withContext } = createStyleContext(ratingGroup)
 
 const RatingGroup = withProvider(styled(ArkRatingGroup.Root), 'root')
-const RatingGroupControl = withContext(styled(ArkRatingGroup.Control), 'control')
+const RatingGroupControl = withContext(
+  styled(ArkRatingGroup.Control),
+  'control'
+)
 const RatingGroupItem = withContext(styled(ArkRatingGroup.Item), 'item')
 const RatingGroupLabel = withContext(styled(ArkRatingGroup.Label), 'label')
 
@@ -29,6 +32,9 @@ export {
 }
 
 export interface RatingGroupProps extends HTMLStyledProps<typeof RatingGroup> {}
-export interface RatingGroupControlProps extends HTMLStyledProps<typeof RatingGroupControl> {}
-export interface RatingGroupItemProps extends HTMLStyledProps<typeof RatingGroupItem> {}
-export interface RatingGroupLabelProps extends HTMLStyledProps<typeof RatingGroupLabel> {}
+export interface RatingGroupControlProps
+  extends HTMLStyledProps<typeof RatingGroupControl> {}
+export interface RatingGroupItemProps
+  extends HTMLStyledProps<typeof RatingGroupItem> {}
+export interface RatingGroupLabelProps
+  extends HTMLStyledProps<typeof RatingGroupLabel> {}

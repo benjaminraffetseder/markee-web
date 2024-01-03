@@ -46,7 +46,8 @@ export {
 
 export interface TableProps extends HTMLStyledProps<typeof Table> {}
 export interface TableBodyProps extends HTMLStyledProps<typeof TableBody> {}
-export interface TableCaptionProps extends HTMLStyledProps<typeof TableCaption> {}
+export interface TableCaptionProps
+  extends HTMLStyledProps<typeof TableCaption> {}
 export interface TableCellProps extends HTMLStyledProps<typeof TableCell> {}
 export interface TableFooterProps extends HTMLStyledProps<typeof TableFooter> {}
 export interface TableHeadProps extends HTMLStyledProps<typeof TableHead> {}

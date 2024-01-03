@@ -9,9 +9,18 @@ const { withProvider, withContext } = createStyleContext(accordion)
 
 const Accordion = withProvider(styled(ArkAccordion.Root), 'root')
 const AccordionItem = withContext(styled(ArkAccordion.Item), 'item')
-const AccordionItemContent = withContext(styled(ArkAccordion.ItemContent), 'itemContent')
-const AccordionItemIndicator = withContext(styled(ArkAccordion.ItemIndicator), 'itemIndicator')
-const AccordionItemTrigger = withContext(styled(ArkAccordion.ItemTrigger), 'itemTrigger')
+const AccordionItemContent = withContext(
+  styled(ArkAccordion.ItemContent),
+  'itemContent'
+)
+const AccordionItemIndicator = withContext(
+  styled(ArkAccordion.ItemIndicator),
+  'itemIndicator'
+)
+const AccordionItemTrigger = withContext(
+  styled(ArkAccordion.ItemTrigger),
+  'itemTrigger'
+)
 
 const Root = Accordion
 const Item = AccordionItem
@@ -33,8 +42,11 @@ export {
 }
 
 export interface AccordionProps extends HTMLStyledProps<typeof Accordion> {}
-export interface AccordionItemProps extends HTMLStyledProps<typeof AccordionItem> {}
-export interface AccordionItemContentProps extends HTMLStyledProps<typeof AccordionItemContent> {}
+export interface AccordionItemProps
+  extends HTMLStyledProps<typeof AccordionItem> {}
+export interface AccordionItemContentProps
+  extends HTMLStyledProps<typeof AccordionItemContent> {}
 export interface AccordionItemIndicatorProps
   extends HTMLStyledProps<typeof AccordionItemIndicator> {}
-export interface AccordionItemTriggerProps extends HTMLStyledProps<typeof AccordionItemTrigger> {}
+export interface AccordionItemTriggerProps
+  extends HTMLStyledProps<typeof AccordionItemTrigger> {}

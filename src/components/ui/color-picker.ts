@@ -11,42 +11,78 @@ const ColorPicker = withProvider(styled(ArkColorPicker.Root), 'root')
 const ColorPickerArea = withContext(styled(ArkColorPicker.Area), 'area')
 const ColorPickerAreaBackground = withContext(
   styled(ArkColorPicker.AreaBackground),
-  'areaBackground',
+  'areaBackground'
 )
-const ColorPickerAreaThumb = withContext(styled(ArkColorPicker.AreaThumb), 'areaThumb')
-const ColorPickerChannelInput = withContext(styled(ArkColorPicker.ChannelInput), 'channelInput')
-const ColorPickerChannelSlider = withContext(styled(ArkColorPicker.ChannelSlider), 'channelSlider')
+const ColorPickerAreaThumb = withContext(
+  styled(ArkColorPicker.AreaThumb),
+  'areaThumb'
+)
+const ColorPickerChannelInput = withContext(
+  styled(ArkColorPicker.ChannelInput),
+  'channelInput'
+)
+const ColorPickerChannelSlider = withContext(
+  styled(ArkColorPicker.ChannelSlider),
+  'channelSlider'
+)
 const ColorPickerChannelSliderThumb = withContext(
   styled(ArkColorPicker.ChannelSliderThumb),
-  'channelSliderThumb',
+  'channelSliderThumb'
 )
 const ColorPickerChannelSliderTrack = withContext(
   styled(ArkColorPicker.ChannelSliderTrack),
-  'channelSliderTrack',
+  'channelSliderTrack'
 )
-const ColorPickerContent = withContext(styled(ArkColorPicker.Content), 'content')
-const ColorPickerControl = withContext(styled(ArkColorPicker.Control), 'control')
+const ColorPickerContent = withContext(
+  styled(ArkColorPicker.Content),
+  'content'
+)
+const ColorPickerControl = withContext(
+  styled(ArkColorPicker.Control),
+  'control'
+)
 const ColorPickerEyeDropperTrigger = withContext(
   styled(ArkColorPicker.EyeDropperTrigger),
-  'eyeDropperTrigger',
+  'eyeDropperTrigger'
 )
-const ColorPickerFormatSelect = withContext(styled(ArkColorPicker.FormatSelect), 'formatSelect')
-const ColorPickerFormatTrigger = withContext(styled(ArkColorPicker.FormatTrigger), 'formatTrigger')
+const ColorPickerFormatSelect = withContext(
+  styled(ArkColorPicker.FormatSelect),
+  'formatSelect'
+)
+const ColorPickerFormatTrigger = withContext(
+  styled(ArkColorPicker.FormatTrigger),
+  'formatTrigger'
+)
 const ColorPickerLabel = withContext(styled(ArkColorPicker.Label), 'label')
-const ColorPickerPositioner = withContext(styled(ArkColorPicker.Positioner), 'positioner')
+const ColorPickerPositioner = withContext(
+  styled(ArkColorPicker.Positioner),
+  'positioner'
+)
 const ColorPickerSwatch = withContext(styled(ArkColorPicker.Swatch), 'swatch')
-const ColorPickerSwatchGroup = withContext(styled(ArkColorPicker.SwatchGroup), 'swatchGroup')
+const ColorPickerSwatchGroup = withContext(
+  styled(ArkColorPicker.SwatchGroup),
+  'swatchGroup'
+)
 const ColorPickerSwatchIndicator = withContext(
   styled(ArkColorPicker.SwatchIndicator),
-  'swatchIndicator',
+  'swatchIndicator'
 )
-const ColorPickerSwatchTrigger = withContext(styled(ArkColorPicker.SwatchTrigger), 'swatchTrigger')
+const ColorPickerSwatchTrigger = withContext(
+  styled(ArkColorPicker.SwatchTrigger),
+  'swatchTrigger'
+)
 const ColorPickerTransparencyGrid = withContext(
   styled(ArkColorPicker.TransparencyGrid),
-  'transparencyGrid',
+  'transparencyGrid'
 )
-const ColorPickerTrigger = withContext(styled(ArkColorPicker.Trigger), 'trigger')
-const ColorPickerValueText = withContext(styled(ArkColorPicker.ValueText), 'valueText')
+const ColorPickerTrigger = withContext(
+  styled(ArkColorPicker.Trigger),
+  'trigger'
+)
+const ColorPickerValueText = withContext(
+  styled(ArkColorPicker.ValueText),
+  'valueText'
+)
 const ColorPickerView = withContext(styled(ArkColorPicker.View), 'view')
 
 const Root = ColorPicker
@@ -123,10 +159,12 @@ export {
 }
 
 export interface ColorPickerProps extends HTMLStyledProps<typeof ColorPicker> {}
-export interface ColorPickerAreaProps extends HTMLStyledProps<typeof ColorPickerArea> {}
+export interface ColorPickerAreaProps
+  extends HTMLStyledProps<typeof ColorPickerArea> {}
 export interface ColorPickerAreaBackgroundProps
   extends HTMLStyledProps<typeof ColorPickerAreaBackground> {}
-export interface ColorPickerAreaThumbProps extends HTMLStyledProps<typeof ColorPickerAreaThumb> {}
+export interface ColorPickerAreaThumbProps
+  extends HTMLStyledProps<typeof ColorPickerAreaThumb> {}
 export interface ColorPickerChannelInputProps
   extends HTMLStyledProps<typeof ColorPickerChannelInput> {}
 export interface ColorPickerChannelSliderProps
@@ -135,17 +173,22 @@ export interface ColorPickerChannelSliderThumbProps
   extends HTMLStyledProps<typeof ColorPickerChannelSliderThumb> {}
 export interface ColorPickerChannelSliderTrackProps
   extends HTMLStyledProps<typeof ColorPickerChannelSliderTrack> {}
-export interface ColorPickerContentProps extends HTMLStyledProps<typeof ColorPickerContent> {}
-export interface ColorPickerControlProps extends HTMLStyledProps<typeof ColorPickerControl> {}
+export interface ColorPickerContentProps
+  extends HTMLStyledProps<typeof ColorPickerContent> {}
+export interface ColorPickerControlProps
+  extends HTMLStyledProps<typeof ColorPickerControl> {}
 export interface ColorPickerEyeDropperTriggerProps
   extends HTMLStyledProps<typeof ColorPickerEyeDropperTrigger> {}
 export interface ColorPickerFormatSelectProps
   extends HTMLStyledProps<typeof ColorPickerFormatSelect> {}
 export interface ColorPickerFormatTriggerProps
   extends HTMLStyledProps<typeof ColorPickerFormatTrigger> {}
-export interface ColorPickerLabelProps extends HTMLStyledProps<typeof ColorPickerLabel> {}
-export interface ColorPickerPositionerProps extends HTMLStyledProps<typeof ColorPickerPositioner> {}
-export interface ColorPickerSwatchProps extends HTMLStyledProps<typeof ColorPickerSwatch> {}
+export interface ColorPickerLabelProps
+  extends HTMLStyledProps<typeof ColorPickerLabel> {}
+export interface ColorPickerPositionerProps
+  extends HTMLStyledProps<typeof ColorPickerPositioner> {}
+export interface ColorPickerSwatchProps
+  extends HTMLStyledProps<typeof ColorPickerSwatch> {}
 export interface ColorPickerSwatchGroupProps
   extends HTMLStyledProps<typeof ColorPickerSwatchGroup> {}
 export interface ColorPickerSwatchIndicatorProps
@@ -154,6 +197,9 @@ export interface ColorPickerSwatchTriggerProps
   extends HTMLStyledProps<typeof ColorPickerSwatchTrigger> {}
 export interface ColorPickerTransparencyGridProps
   extends HTMLStyledProps<typeof ColorPickerTransparencyGrid> {}
-export interface ColorPickerTriggerProps extends HTMLStyledProps<typeof ColorPickerTrigger> {}
-export interface ColorPickerValueTextProps extends HTMLStyledProps<typeof ColorPickerValueText> {}
-export interface ColorPickerViewProps extends HTMLStyledProps<typeof ColorPickerView> {}
+export interface ColorPickerTriggerProps
+  extends HTMLStyledProps<typeof ColorPickerTrigger> {}
+export interface ColorPickerValueTextProps
+  extends HTMLStyledProps<typeof ColorPickerValueText> {}
+export interface ColorPickerViewProps
+  extends HTMLStyledProps<typeof ColorPickerView> {}

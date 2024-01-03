@@ -11,7 +11,10 @@ const Tooltip = withProvider(ArkTooltip.Root)
 const TooltipArrow = withContext(styled(ArkTooltip.Arrow), 'arrow')
 const TooltipArrowTip = withContext(styled(ArkTooltip.ArrowTip), 'arrowTip')
 const TooltipContent = withContext(styled(ArkTooltip.Content), 'content')
-const TooltipPositioner = withContext(styled(ArkTooltip.Positioner), 'positioner')
+const TooltipPositioner = withContext(
+  styled(ArkTooltip.Positioner),
+  'positioner'
+)
 const TooltipTrigger = withContext(styled(ArkTooltip.Trigger), 'trigger')
 
 const Root = Tooltip
@@ -37,8 +40,13 @@ export {
 }
 
 export interface TooltipProps extends HTMLStyledProps<typeof Tooltip> {}
-export interface TooltipArrowProps extends HTMLStyledProps<typeof TooltipArrow> {}
-export interface TooltipArrowTipProps extends HTMLStyledProps<typeof TooltipArrowTip> {}
-export interface TooltipContentProps extends HTMLStyledProps<typeof TooltipContent> {}
-export interface TooltipPositionerProps extends HTMLStyledProps<typeof TooltipPositioner> {}
-export interface TooltipTriggerProps extends HTMLStyledProps<typeof TooltipTrigger> {}
+export interface TooltipArrowProps
+  extends HTMLStyledProps<typeof TooltipArrow> {}
+export interface TooltipArrowTipProps
+  extends HTMLStyledProps<typeof TooltipArrowTip> {}
+export interface TooltipContentProps
+  extends HTMLStyledProps<typeof TooltipContent> {}
+export interface TooltipPositionerProps
+  extends HTMLStyledProps<typeof TooltipPositioner> {}
+export interface TooltipTriggerProps
+  extends HTMLStyledProps<typeof TooltipTrigger> {}

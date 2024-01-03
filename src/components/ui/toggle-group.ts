@@ -16,4 +16,5 @@ const Item = ToggleGroupItem
 export { Item, Root, ToggleGroup, ToggleGroupItem }
 
 export interface ToggleGroupProps extends HTMLStyledProps<typeof ToggleGroup> {}
-export interface ToggleGroupItemProps extends HTMLStyledProps<typeof ToggleGroupItem> {}
+export interface ToggleGroupItemProps
+  extends HTMLStyledProps<typeof ToggleGroupItem> {}

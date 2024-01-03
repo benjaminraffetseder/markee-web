@@ -38,7 +38,8 @@ export {
 
 export interface CardProps extends HTMLStyledProps<typeof Card> {}
 export interface CardBodyProps extends HTMLStyledProps<typeof CardBody> {}
-export interface CardDescriptionProps extends HTMLStyledProps<typeof CardDescription> {}
+export interface CardDescriptionProps
+  extends HTMLStyledProps<typeof CardDescription> {}
 export interface CardFooterProps extends HTMLStyledProps<typeof CardFooter> {}
 export interface CardHeaderProps extends HTMLStyledProps<typeof CardHeader> {}
 export interface CardTitleProps extends HTMLStyledProps<typeof CardTitle> {}

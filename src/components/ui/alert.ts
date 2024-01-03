@@ -33,7 +33,9 @@ export {
 }
 
 export interface AlertProps extends HTMLStyledProps<typeof Alert> {}
-export interface AlertContentProps extends HTMLStyledProps<typeof AlertContent> {}
-export interface AlertDescriptionProps extends HTMLStyledProps<typeof AlertDescription> {}
+export interface AlertContentProps
+  extends HTMLStyledProps<typeof AlertContent> {}
+export interface AlertDescriptionProps
+  extends HTMLStyledProps<typeof AlertDescription> {}
 export interface AlertIconProps extends HTMLStyledProps<typeof AlertIcon> {}
 export interface AlertTitleProps extends HTMLStyledProps<typeof AlertTitle> {}

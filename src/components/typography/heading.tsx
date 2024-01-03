@@ -10,6 +10,6 @@ export type HeadingProps = {
 export const Heading = (props: HeadingProps) => {
   const { as = 'h2', ...localProps } = props
   const Dynamic = styled(as, heading)
-  
+
   return <Dynamic {...localProps} />
 }
