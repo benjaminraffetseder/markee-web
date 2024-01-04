@@ -8,9 +8,9 @@ export default defineConfig({
     '@pandacss/preset-base',
     '@park-ui/panda-preset',
     createPreset({
-      accentColor: 'grass',
-      grayColor: 'olive',
-      borderRadius: 'sm',
+      accentColor: 'gold',
+      grayColor: 'sand',
+      borderRadius: '2xl',
     }),
   ],
   theme: {

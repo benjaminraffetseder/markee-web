@@ -24,7 +24,7 @@ export default function Home() {
           gap: 2,
         })}
       >
-        <Heading as='h1' textStyle='5xl'>
+        <Heading as="h1" textStyle="5xl">
           Markee
         </Heading>
         <Heading>Your reading companion</Heading>
@@ -35,10 +35,10 @@ export default function Home() {
           bookmarks.
         </Text>
         <HStack gap={10} pt={2}>
-          <Button variant='solid' className={css({ w: 'fit-content' })}>
+          <Button variant="solid" className={css({ w: 'fit-content' })}>
             Get started
           </Button>
-          <Button variant='ghost' className={css({ w: 'fit-content' })}>
+          <Button variant="ghost" className={css({ w: 'fit-content' })}>
             About
           </Button>
         </HStack>
